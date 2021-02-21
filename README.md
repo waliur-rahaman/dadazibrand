@@ -1,2 +1,2 @@
 # DadaziBrand
-DadaziBrand is a online store ecommerce website.
+DadaziBrand is an online store ecommerce website.
