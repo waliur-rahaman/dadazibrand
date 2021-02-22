@@ -1,0 +1,28 @@
+.btn{
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: $titleColor;
+    line-height: 28px;
+    transition: 0.3s;
+    &.btn-link{
+        background-color: rgb(230, 88, 211);
+        color: $white;
+        &:hover{
+            background-color: rgb(138, 31, 124);
+            color: $white;
+        }
+    }
+}
+
+.text-link{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    color: $titleColor;
+    line-height: 28px;
+    transition: 0.3s;
+    &:hover{
+        letter-spacing: 1px;
+    }
+}

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------------------------
+Theme Name: Name of the theme
+Author: Author name
+URL: contact url
+version: 1.0.0
+------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------
+CSS table of content
+
+    01. Settings style
+    02. Base style
+    03. Sections style
+    04. Components style
+    05. Utilities style
+
+------------------------------------------------------------------------------------*/
+
+/*--------------------------------
+01. Settings style
+--------------------------------*/
+@import 'settings/settings.config'; 
+@import 'settings/settings.animations'; 
+@import 'settings/settings.colors'; 
+@import 'settings/settings.typography'; 
+@import 'settings/settings.breakpoints';
+
+/*--------------------------------
+02. Base style
+--------------------------------*/
+@import 'helper/reset.all'; 
+@import 'helper/helper.theme';
+
+/*--------------------------------
+03. Sections style
+--------------------------------*/
+@import 'sections/slider/sections.slider';
+@import 'sections/footer/sections.footer';
+
+//home-one page
+@import 'sections/home-one/sections.homeOne';
+
+//home-one page
+@import 'sections/about-page/sections.aboutPage';
+
+//home-one page
+@import 'sections/blog/sections.blog';
+
+/*--------------------------------
+04. Components style
+--------------------------------*/
+@import 'components/components.navbar';
+@import 'components/components.sectionTitle';
+@import 'components/components.buttons';
+@import 'components/components.pageHeader';
+@import 'components/components.pagination';
+@import 'components/components.form';
+@import 'components/components.comments';
+
+/*--------------------------------
+05. Utilities style
+--------------------------------*/
+@import 'utilities/utilites';
