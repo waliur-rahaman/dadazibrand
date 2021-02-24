@@ -1,14 +1,127 @@
-#footer-bottom{
-    padding: 20px 0;
-    background-color:#fd79a8;
+.footer{
+    padding: 30px 0 20px 0;
+    background-color: $bgFooter;
+    
+    &__top{
+        padding: 20px 0;
+    }
+    
+    &__bottom{
+        border-top: 1px solid rgba(255,255,255,0.2);
+        padding-top: 20px;
+    }
+}
+
+.footer__info{
+    &__logo{
+        margin-bottom: 20px;
+        a img{
+            width: 50%;
+            height: 100px;
+        }
+    }
+    
+    &__list{
+        li{
+            display: flex;
+            flex-direction: column;
+            &:not(:first-child){
+                margin-top: 5px;
+            }
+        }
+        
+        li a{
+            font-size: 16px;
+            font-weight: 400;
+            color: $white;
+            line-height: 28px;
+            transition: 0.3s;
+            &:hover{
+                color: $themeYellow;
+            }
+            i{
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.social-link{
+    margin-top: 20px;
+    display: flex;
+    li{
+        &:not(:first-child){
+            margin-left: 10px;
+        }
+    }
+    
+    li a{
+        transition: 0.3s;
+        &:hover i{
+            background-color: $linkHoverColor;
+        }
+    }
+    
+    li a i{
+        width: 30px;
+        height: 30px;
+        //background-color: $bgButtonBrightSun;
+        font-size: 16px;
+        font-weight: 400;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+}
+
+.footer__widget{
+    &__title{
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        color: $white;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    
+    &__list{
+        li{
+            display: flex;
+            flex-direction: column;
+            &:not(:first-child){
+                margin-top: 5px;
+            }
+        }
+        
+        li a{
+            font-size: 14px;
+            font-weight: 400;
+            color: $white;
+            line-height: 28px;
+            transition: 0.3s;
+            &:hover{
+                color: $themeYellow;
+                padding-left: 5px;
+            }
+        }
+    }
 }
 
 .copyright-text{
     text-align: center;
     h2{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         color: $white;
         line-height: 28px;
+        a{
+            color: $themeYellow;
+            transition: 0.3s;
+            &:hover{
+                color: $white;
+            }
+        }
     }
 }

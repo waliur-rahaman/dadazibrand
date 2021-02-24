@@ -1,6 +1,92 @@
+.header{
+    &__top{
+        padding: 10px 20px;
+        background-color: $themeColor;
+    }
+    
+    &__nav{
+        padding: 10px 20px;
+        background-color: $themeBlue;
+    }
+}
+
+.header__top{
+    
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__contact,
+    &__address{
+        ul{
+            display: flex;
+            li{
+                &:not(:first-child){
+                    margin-left: 10px;
+                }
+            }
+            li a{
+                font-size: 12px;
+                font-weight: 400;
+                color: $white;
+                transition: 0.3s;
+                &:hover{
+                    color: $themeYellow;
+                }
+            }
+        }
+    }
+}
+
+.header__nav{
+    &__extra{
+        border-left: 1px solid rgba(255, 255, 255, 0.4);
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        li{
+            margin: 0 10px;
+            &:last-child{
+                margin-left: 20px;
+                margin-right: 0;
+            }
+        }
+        
+        li a{
+            text-transform: capitalize;
+            font-size: 15px;
+            font-weight: 400;
+            color: $white;
+            line-height: 28px;
+            transition: 0.3s;
+            &:hover{
+                color: $themeYellow;
+            }
+        }
+    }
+}
+
+.my-cart{
+    position: relative;
+    span{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background-color: $themeColor;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .navbar-brand{
     img{
-        width: 100px;
+        width: 200px;
+        height: 50px;
     }
 }
 
@@ -32,7 +118,7 @@
         text-transform: capitalize;
         font-size: 15px;
         font-weight: 400;
-        color: rgb(29, 49, 108);
+        color: $white;
         line-height: 28px;
         transition: 0.3s;
         position: relative;
@@ -43,12 +129,12 @@
             left: 0;
             width: 0;
             height: 1px;
-            background-color: $titleColor;
+            background-color: $navHoverColor;
             opacity: 0;
             transition: 0.3s;
         }
         &:hover{
-            color: $titleColor;
+            color: $navHoverColor;
             &::before{
                 width: 20px;
                 opacity: 1;
@@ -75,8 +161,12 @@
             padding: 5px 15px;
         }
         li a{
+            color: $titleColor;
             &::before{
                 display: none;
+            }
+            &:hover{
+                color: $navHoverColor;
             }
         }
     }
